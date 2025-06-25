@@ -2,7 +2,7 @@ package com.kyler.addon;
 
 import com.kyler.addon.commands.CommandExample;
 import com.kyler.addon.hud.HudExample;
-import com.kyler.addon.modules.ModuleExample;
+import com.kyler.addon.modules.*;
 import com.mojang.logging.LogUtils;
 import meteordevelopment.meteorclient.addons.GithubRepo;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
@@ -23,7 +23,13 @@ public class KylerAddon extends MeteorAddon {
         LOG.info("Initializing Kyler Addon");
 
         // Modules
-        Modules.get().add(new ModuleExample());
+        Modules.get().add(new AntiGriefLogger());
+        Modules.get().add(new AntiHungerBypass());
+        Modules.get().add(new AutoHighwayAssist());
+        Modules.get().add(new BaseFinderESP());
+        Modules.get().add(new ChunkBanDetector());
+        Modules.get().add(new CrystalAuraLite());
+        Modules.get().add(new PortalTrapESP());
 
         // Commands
         Commands.add(new CommandExample());
