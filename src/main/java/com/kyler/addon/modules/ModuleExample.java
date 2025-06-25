@@ -1,6 +1,6 @@
-package com.example.addon.modules;
+package com.kyler.addon.modules;
 
-import com.example.addon.AddonTemplate;
+import com.kyler.addon.KylerAddon;
 import meteordevelopment.meteorclient.events.render.Render3DEvent;
 import meteordevelopment.meteorclient.renderer.ShapeMode;
 import meteordevelopment.meteorclient.settings.ColorSetting;
@@ -43,12 +43,11 @@ public class ModuleExample extends Module {
      * The {@code name} parameter should be in kebab-case.
      */
     public ModuleExample() {
-        super(AddonTemplate.CATEGORY, "world-origin", "An example module that highlights the center of the world.");
+        super(KylerAddon.CATEGORY, "world-origin", "An example module that highlights the center of the world.");
     }
 
     /**
      * Example event handling method.
-     * Requires {@link AddonTemplate#getPackage()} to be setup correctly, will fail silently otherwise.
      */
     @EventHandler
     private void onRender3d(Render3DEvent event) {
