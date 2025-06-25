@@ -30,6 +30,9 @@ public class KylerAddon extends MeteorAddon {
         Modules.get().add(new ChunkBanDetector());
         Modules.get().add(new CrystalAuraLite());
         Modules.get().add(new PortalTrapESP());
+        Modules.get().add(new AutoObsidianTrap());
+        Modules.get().add(new StashSniffer());
+        Modules.get().add(new AutoElytraLaunch());
 
         // Commands
         Commands.add(new CommandExample());
